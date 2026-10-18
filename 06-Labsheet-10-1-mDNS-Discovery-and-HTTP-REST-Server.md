@@ -620,6 +620,8 @@ ping esp32-node.local
 ```
 *(บันทึกภาพผลการ Ping และหมายเลข IP ที่ Resolve ได้ เช่น `Reply from 192.168.1.181`)*
 
+<img width="972" height="611" alt="ภาพถ่ายหน้าจอ 2569-10-19 เวลา 00 44 43" src="https://github.com/user-attachments/assets/47edd6fb-e20f-42fd-b549-5d6d4d08dc46" />
+
 > [!TIP] **คู่มือการแก้ไขปัญหาเมื่อ Resolve ชื่อ `esp32-node.local` ไม่พบ (Troubleshooting Guide)**
 > หากคำสั่ง `ping esp32-node.local` ขึ้นข้อความ `could not find host` ให้ตรวจสอบ 2 จุดสำคัญดังนี้
 > 1. **เปลี่ยนสถานะ Wi-Fi บน Windows เป็น "Private Network"**
