@@ -638,6 +638,7 @@ curl.exe -X GET http://esp32-node.local/api/status
 ```json
 {"pot_raw":15,"free_heap":213848,"led":true}
 ```
+<img width="972" height="611" alt="ภาพถ่ายหน้าจอ 2569-10-19 เวลา 00 47 44" src="https://github.com/user-attachments/assets/f683ac78-250b-43f7-baeb-a5e91445fd6a" />
 
 #### 3. ทดสอบสั่งเปิด-ปิด LED ผ่าน cURL หรือ PowerShell
 
@@ -645,11 +646,14 @@ curl.exe -X GET http://esp32-node.local/api/status
 ```powershell
 # สั่งเปิดไฟ LED (GPIO 2)
 curl.exe -s -X POST http://esp32-node.local/api/led -H "Content-Type: application/json" -d '{\"state\": true}'
-
+curl http://esp32-node.local/api/led -H "Content-Type: application/json" -d '{\"state\": true}'
 # สั่งปิดไฟ LED (GPIO 2)
 curl.exe -s -X POST http://esp32-node.local/api/led -H "Content-Type: application/json" -d '{\"state\": false}'
+curl http://esp32-node.local/api/led -H "Content-Type: application/json" -d '{\"state\": false}'
 ```
 การเปิดและปิดไฟ จะได้ผลลัพธ์เป็น `{"result":"success"}` ทั้งคู่
+
+<img width="1049" height="611" alt="ภาพถ่ายหน้าจอ 2569-10-19 เวลา 00 49 38" src="https://github.com/user-attachments/assets/787ba07a-d551-448f-b3d9-d56f9316b344" />
 
 
 **วิธีที่ 2 ใช้คำสั่ง `Invoke-RestMethod` ของ PowerShell โดยตรง (แนะนำสำหรับ Windows)**
